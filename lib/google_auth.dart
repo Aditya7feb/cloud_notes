@@ -13,6 +13,7 @@ Future<bool> signInWithGoogle(BuildContext context) async {
     final GoogleSignInAccount? googleSignInAccount =
         await googleSignIn.signIn();
 
+    // ignore: unnecessary_null_comparison
     if (GoogleSignInAccount != null) {
       final GoogleSignInAuthentication googleSignInAuthentication =
           await googleSignInAccount!.authentication;

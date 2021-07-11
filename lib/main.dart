@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Cloud Notes',
       theme: ThemeData.dark()
           .copyWith(primaryColor: Colors.white, accentColor: Colors.white),
